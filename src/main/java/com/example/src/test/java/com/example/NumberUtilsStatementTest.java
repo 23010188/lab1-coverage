@@ -1,4 +1,4 @@
-public class NumberUtilsStatementTest {package com.example;
+package com.example;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -9,16 +9,11 @@ public class NumberUtilsStatementTest {
 
     @Test
     void testStatementCoverage() {
-        // Bao phủ nhánh mảng null
+        // Bao phu nhanh null (chay qua return 0)
         assertEquals(0, utils.countPositiveEvens(null));
 
-        // Bao phủ các dòng trong vòng for và dòng count++
+        // Bao phu toan bo vong lap va count++
         int[] arr = {2, 4};
         assertEquals(2, utils.countPositiveEvens(arr));
     }
 }
-    
-}
-
-import main.java.com.example.NumberUtils;
-
